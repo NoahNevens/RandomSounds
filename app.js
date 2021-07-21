@@ -15,7 +15,7 @@ $("#start").on("click", function(event) {
 })
 
 function loop(a) {
-    var rand = (Math.random() * 9000) + 3000; // A random value between 1 and 10 seconds
+    var rand = (Math.random() * 7000) + 3000; // A random value between 1 and 10 seconds
 
     setTimeout(function() {
             if (isLoop) {
