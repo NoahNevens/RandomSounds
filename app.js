@@ -10,7 +10,7 @@ $("#start").on("click", function(event) {
     isLoop = true;
     var rand1 = Math.round(Math.random() * 6.5);
     a = new Audio(sounds[rand1]);
-    a.volume = 0.03;
+    a.volume = 0.1;
     loop(a);
 })
 
@@ -22,7 +22,7 @@ function loop(a) {
                 a.play(); // Play the audio
                 var rand1 = Math.round(Math.random() * 6.5);
                 a = new Audio(sounds[rand1]);
-                a.volume = 0.03;
+                a.volume = 0.1;
                 loop(a); // Call the loop function again
             }
     }, rand);
