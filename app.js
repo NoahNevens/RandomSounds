@@ -1,6 +1,6 @@
 var sounds = ['http://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg', 'http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/bonus.wav', 
 'http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/player_shoot.wav', 'http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/pause.wav',
-'http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/eatedible.ogg', 'http://codeskulptor-demos.commondatastorage.googleapis.com/descent/Zombie.mp3',
+'http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/eatedible.ogg', 'http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/explosion.ogg',
 'https://rpg.hamsterrepublic.com/wiki-images/d/d7/Oddbounce.ogg']
 
 var isLoop = false;
@@ -15,7 +15,7 @@ $("#start").on("click", function(event) {
 })
 
 function loop(a) {
-    var rand = (Math.random() * 9000) + 1000; // A random value between 1 and 10 seconds
+    var rand = (Math.random() * 9000) + 3000; // A random value between 1 and 10 seconds
 
     setTimeout(function() {
             if (isLoop) {
